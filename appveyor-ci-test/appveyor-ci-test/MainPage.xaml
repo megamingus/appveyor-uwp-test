@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="BurlyWood">
-        <TextBlock Text="it Worked!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="this changes should not build" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
     </Grid>
 </Page>
