@@ -13,5 +13,6 @@ platform:
 configuration: Release
 
 before_build:
+  - ps: Get-ChildItem Env:
   - cmd: nuget restore
   - cmd: ECHO MINGO this should also trigger a build
