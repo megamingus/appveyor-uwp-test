@@ -1,0 +1,17 @@
+# version format
+version: 1.0.{build}
+
+# you can use {branch} name in version format too
+# version: 1.0.{build}-{branch}
+
+# branches to build
+branches:
+  only:
+    - master
+platform:
+  - x86
+configuration: Release
+
+before_build:
+  - cmd: nuget restore MuralSketch.Win.sln
+  - cmd: ECHO MINGO this is the file
