@@ -13,5 +13,6 @@ platform:
 configuration: Release
 
 before_build:
+  - ps: $env:APPVEYOR_PULL_REQUEST_TITLE
   - cmd: nuget restore
-  - cmd: ECHO MINGO this is the file
+  - cmd: ECHO MINGO this should also trigger a build
