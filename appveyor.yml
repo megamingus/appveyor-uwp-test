@@ -14,4 +14,4 @@ configuration: Release
 
 before_build:
   - cmd: nuget restore
-  - cmd: ECHO MINGO this is the file
+  - cmd: ECHO MINGO this should also trigger a build
